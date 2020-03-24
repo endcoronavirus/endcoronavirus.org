@@ -9,9 +9,6 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "3.6.3"
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
-
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
@@ -22,3 +19,5 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
+# sass
+gem "jekyll-sass-converter"

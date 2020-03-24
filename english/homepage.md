@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Spread knowledge, not the virus
 permalink: /
 ---
