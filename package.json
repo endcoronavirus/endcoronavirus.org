@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0",
+    "start": "bundle exec jekyll serve",
+    "build": "echo 'No build'"
+  }
+}
