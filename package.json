@@ -2,7 +2,8 @@
   "scripts": {
     "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0",
     "start": "bundle exec jekyll serve",
-    "build": "node-sass --include-path node_modules _sass --output-style compressed --output css && postcss --use autoprefixer --replace css/**/*.css && bundle exec jekyll build"
+    "css": "node-sass --include-path node_modules _sass --output-style compressed --output css && postcss --use autoprefixer --replace css/**/*.css",
+    "build": "yarn run css && bundle exec jekyll build"
   },
   "devDependencies": {
     "autoprefixer": "9.5.1",
