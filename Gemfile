@@ -20,4 +20,10 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # sass
-gem "jekyll-sass-converter"
+gem "jekyll-sass-converter", git: "https://github.com/jekyll/jekyll-sass-converter.git", ref: "51955c6"
+
+# watcher
+gem "jekyll-watch", "~> 1.1"
+
+# feed
+gem "jekyll-feed"
