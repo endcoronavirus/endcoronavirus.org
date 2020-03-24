@@ -2,6 +2,12 @@
   "scripts": {
     "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0",
     "start": "bundle exec jekyll serve",
-    "build": "echo 'No build'"
+    "build": "node-sass --include-path node_modules _sass --output-style compressed --output css && postcss --use autoprefixer --replace css/**/*.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.5.1",
+    "node-sass": "4.13.1",
+    "postcss-cli": "6.1.2",
+    "vanilla-framework": "2.8.0"
   }
 }
