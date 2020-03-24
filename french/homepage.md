@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Propagez l'information, pas le virus
 permalink: /fr
 ---
@@ -20,7 +20,7 @@ March 20, 2020
 
 S'inscrivez-vous afin d'aider votre communauté et votre famille
 
-## Votre famille et votre communauté ont besoin de vous : 
+## Votre famille et votre communauté ont besoin de vous :
 
 ### Lavez-vous les mains !
 Nettoyez les surfaces et utilisez du gel hydroalcoolique
@@ -51,7 +51,7 @@ Il existe plusieurs mesures que nous pouvons prendre pour arrêter la propagatio
 
 ### Lignes directrices à destination des familles
 
-### Lignes directrices pour les entreprises 
+### Lignes directrices pour les entreprises
 
 ### Lignes directrices à destination des gouvernements
 
