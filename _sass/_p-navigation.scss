@@ -1,0 +1,13 @@
+@mixin endcoronavirus-navigation {
+  .p-navigation {
+    background-color: $color-x-dark !important;
+  }
+
+  .p-navigation__banner .p-navigation__link {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.3;
+    text-rendering: optimizeLegibility;
+  }
+}
