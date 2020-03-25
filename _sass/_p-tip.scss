@@ -1,0 +1,15 @@
+@mixin endcoronavirus-p-tip {
+  .p-tip {
+    border-bottom: 2px solid $tip-color;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+
+    .p-tip__text {
+      background-color: $tip-color;
+      color: #fff;
+      margin: 0;
+      padding: 0.5rem 1rem;
+      width: fit-content;
+    }
+  }
+}
