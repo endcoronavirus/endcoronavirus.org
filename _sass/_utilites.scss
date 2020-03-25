@@ -1,6 +1,8 @@
 @mixin endcoronavirus-utilities {
   .u-touch--top {
-    margin-top: -1.5rem;
+    @media only (min-width: $breakpoint-small) {
+      margin-top: -1.5rem;
+    }
   }
 
   .u-no-border {
