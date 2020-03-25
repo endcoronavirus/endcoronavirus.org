@@ -4,5 +4,14 @@
 @import "vanilla-framework/scss/vanilla";
 @include vanilla;
 
+@import "utilites";
+@include endcoronavirus-utilities;
+
+@import "b-typography";
+@include endcoronavirus-typography;
+
 @import "p-navigation";
 @include endcoronavirus-navigation;
+
+@import "p-strip";
+@include endcoronavirus-strips;
