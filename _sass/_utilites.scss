@@ -1,0 +1,10 @@
+@mixin endcoronavirus-utilities {
+  .u-touch--top {
+    margin-top: -1.5rem;
+  }
+
+  .u-no-border {
+    border: 0;
+    border-radius: 0;
+  }
+}
