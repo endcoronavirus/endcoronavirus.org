@@ -16,5 +16,13 @@
 @import "p-strip";
 @include endcoronavirus-strips;
 
+
 @import "p-buttons";
 @include endcoronavirus-buttons;
+
+@import "p-tip";
+@include endcoronavirus-p-tip;
+
+@import "p-card";
+@include endcoronavirus-p-card;
+
