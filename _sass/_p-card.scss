@@ -1,0 +1,10 @@
+@mixin endcoronavirus-p-card {
+  .p-card--light {
+    @extend %vf-card;
+
+    background-color: $color-mid-x-light;
+    border: none;
+    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+  }
+}
