@@ -1,0 +1,9 @@
+@mixin endcoronavirus-footer {
+  .p-strip--footer {
+    background-color: #333;
+  }
+  .p-inline-list__item .p-link--inverted {
+    position: relative;
+    top: -7px;
+  }
+}

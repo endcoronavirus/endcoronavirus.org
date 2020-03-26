@@ -25,6 +25,9 @@
 @import "p-card";
 @include endcoronavirus-p-card;
 
+@import "p-footer";
+@include endcoronavirus-footer;
+
 /* Fix max-width bug in vanilla - lists should match paragraphs */
 ul,
 ol {
