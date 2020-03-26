@@ -6,7 +6,7 @@
     <meta https-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
 
     <title>
-      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+      {{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}
     </title>
 
     <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -60,8 +60,8 @@
 
     <!-- Favicons
   ================================================== -->
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/images/uploads/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/uploads/favicon.png" />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
