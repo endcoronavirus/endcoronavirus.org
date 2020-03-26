@@ -1,0 +1,65 @@
+{% include head.html %}
+
+<body>
+  {% include google-tag-manager.html %}
+  {% include header.html %}
+
+  <div class="wrapper u-no-margin--top">
+    <div id="main-content" class="inner-wrapper">
+
+      <div class="p-strip--accent is-extra-shallow">
+        <div class="row">
+          <h1 class="u-no-margin--bottom">{{ page.title }}</h1>
+        </div>
+      </div>
+      <section class="p-strip">
+        <div class="row">
+          <div class="col-8">
+            {{ content }}
+          </div>
+          <div class="col-4">
+            {{ extra_side_content }}
+
+            <div class="p-card u-no-border u-touch--top-extra u-no-margin--bottom">
+              <h5>Global COVID-19 worldwide cases</h5>
+              <h3 class="p-header--stylised">Today's updates</h3>
+              <hr />
+
+              {% capture my_include %}{% include daily-stats.md %}{% endcapture %}
+              {{ my_include | markdownify }}
+              <a class="p-button-panel" href="/updates">See all updates &rsaquo;</a>
+            </div>
+
+            <div class="p-card--light">
+              <h4 class="p-card__title">Everyone can help, Join us</h4>
+              <div class="p-card__content">
+                <p>to help your communities and families, create safe zones</p>
+                <p class="p-card__content"><a href="/signup" class="p-button--brand">Sign up</a></p>
+              </div>
+            </div>
+            <div class="p-card u-no-border">
+              <h4 class="p-card__title">Why are people so afraid of this outbreak, isn't it just like the normal flu?</h4>
+              <div class="p-card__content">
+                <p>
+                  The Coronavirus causes about 20% severe cases and 2% deaths. This is about 20 times higher than the flu.
+                </p>
+                <p>
+                  A typical incubation period is 3 days but it may extend to 14 days, and reports exist of 24 and 27 days.
+                </p>
+                <p>
+                  It is highly contagious with an increase from day to day of 50% in new cases (infection rate R0 of about
+                  3-4)
+                  unless extraordinary interventions are made.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      {% include footer.html %}
+    </div><!-- /.inner-wrapper -->
+  </div><!-- /.wrapper -->
+
+</body>
+
+</html>
