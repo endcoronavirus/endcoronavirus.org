@@ -1,5 +1,9 @@
 @mixin endcoronavirus-typography {
 
+  h1 {
+    font-size: 37px;
+  }
+
   h1,
   h2,
   h3,
@@ -11,5 +15,9 @@
 
   strong {
     font-weight: 600;
+  }
+
+  .p-header--stylised {
+    color: $color-brand;
   }
 }
