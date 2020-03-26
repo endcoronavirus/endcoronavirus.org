@@ -1,13 +1,38 @@
 @mixin endcoronavirus-navigation {
-  .p-navigation {
-    background-color: $color-x-dark !important;
+  .p-navigation__logo {
+    height: 5.6875rem;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      width: 56%;
+    }
+  }
+
+  .p-navigation__nav {
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      align-items: center;
+    }
+  }
+
+  .p-navigation__toggle--open,
+  .p-navigation__toggle--close {
+    margin-top: 1.5rem;
   }
 
   .p-navigation__banner .p-navigation__link {
-    color: white;
+    color: $color-x-light;
+    font-size: 1.125rem;
     font-weight: bold;
-    font-size: 30px;
     line-height: 1.3;
     text-rendering: optimizeLegibility;
+  }
+
+  .p-subnav__item {
+    padding-bottom: 4px;
+    padding-top: 4px;
   }
 }
