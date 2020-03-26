@@ -9,7 +9,9 @@
 
       <div class="p-strip--accent is-extra-shallow">
         <div class="row">
-          <h1 class="u-no-margin--bottom">{{ page.title }}</h1>
+          <div class="col-8">
+            <h1 class="u-no-margin--bottom">{{ page.title }}</h1>
+          </div>
         </div>
       </div>
       <section class="p-strip">
@@ -18,8 +20,6 @@
             {{ content }}
           </div>
           <div class="col-4">
-            {{ extra_side_content }}
-
             <div class="p-card u-no-border u-touch--top-extra u-no-margin--bottom">
               <h5>Global COVID-19 worldwide cases</h5>
               <h3 class="p-header--stylised">Today's updates</h3>
