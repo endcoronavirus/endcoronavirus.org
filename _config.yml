@@ -2,3 +2,4 @@ title: EndCoronavirus.org
 description: Spread knowledge, not the virus
 markdown: kramdown
 permalink: /updates/:year-:month-:day
+include: [_redirects]
