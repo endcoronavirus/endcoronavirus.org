@@ -3,4 +3,14 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
+  .p-strip--dark-grey {
+    @extend %vf-strip;
+
+    background-color: #333;
+
+    &.is-dark {
+      color: $color-x-light;
+    }
+  }
 }
