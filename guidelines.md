@@ -7,37 +7,37 @@ The Coronavirus outbreak originating in Wuhan has about 20% severe cases and 2% 
 
 ## **Download Guidelines as PDF**
 
-[Everyday Life and COVID-19](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e7ac3f4c21456e98890e810_Everyday%20Life%20and%20COVID-19.pdf)
+[Everyday Life and COVID-19](/media/5e7ac3f4c21456e98890e810_Everyday%20Life%20and%20COVID-19.pdf)
 
-[Essential Coronavirus Guidelines](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ee4bda4e7ff2b9816afac_Essential%20Coronavirus%20Guidelines.pdf)
+[Essential Coronavirus Guidelines](/media/5e6ee4bda4e7ff2b9816afac_Essential%20Coronavirus%20Guidelines.pdf)
 
-[Family Guidelines](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ee4bda2ae97577d31c65d_Family%20Guidelines.pdf)
+[Family Guidelines](/media/5e6ee4bda2ae97577d31c65d_Family%20Guidelines.pdf)
 
-[High-Risk Institution Guidelines](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ee4bd7ef394e84d554c42_outbreak_guidelines_for_high_risk_institutions.pdf)
+[High-Risk Institution Guidelines](/media/5e6ee4bd7ef394e84d554c42_outbreak_guidelines_for_high_risk_institutions.pdf)
 
-[Guidelines for Self Isolation](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ede25e64d7d027edae414_Isolation.pdf)
+[Guidelines for Self Isolation](/media/5e6ede25e64d7d027edae414_Isolation.pdf)
 
 [Massive Testing Can Stop the Coronavirus Outbreak](https://www.endcoronavirus.org/page/massive-testing-can-stop-the-coronavirus-outbreak)
 
-[Business Guidelines](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ee4bda4e7ff6c8f16afad_Business%20Guidelines.pdf)
+[Business Guidelines](/media/5e6ee4bda4e7ff6c8f16afad_Business%20Guidelines.pdf)
 
-[Recommendations for Policy Makers](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ee4bc1489072a93d0adfe_Recommendations%20for%20Policy%20Makers%20Guidelines.pdf)
+[Recommendations for Policy Makers](/media/5e6ee4bc1489072a93d0adfe_Recommendations%20for%20Policy%20Makers%20Guidelines.pdf)
 
-[Individual Community and Government Guidelines](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6ee4bc7ef394ee6a554c32_Individual%20community%20and%20government%20guidelines.pdf)
+[Individual Community and Government Guidelines](/media/5e6ee4bc7ef394ee6a554c32_Individual%20community%20and%20government%20guidelines.pdf)
 
-[Respiratory Health for Better COVID-19 Outcomes](https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e722f019af277c422b0f6e0_respiratory%20health%20for%20better%20COVID-19%20outcomes.pdf)
+[Respiratory Health for Better COVID-19 Outcomes](/media/5e722f019af277c422b0f6e0_respiratory%20health%20for%20better%20COVID-19%20outcomes.pdf)
 
-[Guidelines for Supermarkets, Grocery Stores and Pharmacies](https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e7226847096a8587bb11a1b/1584539269875/Supermarket.pdf)
+[Guidelines for Supermarkets, Grocery Stores and Pharmacies](/media/Supermarket.pdf)
 
-[Community action and support for COVID19](http://www.endcoronavirus.org/page/community-action-and-support-for-covid-19)
+[Community action and support for COVID19](/community-action-and-support-for-covid-19)
 
-[Employee safety and screening: questions for employers](http://www.endcoronavirus.org/page/covid-19-employee-safety-and-screening-questions-for-employers)
+[Employee safety and screening: questions for employers](/covid-19-employee-safety-and-screening-questions-for-employers)
 
 ## **Other Useful Guidelines**
 
 [Handbook of COVID-19 Prevention and Treatment](http://bit.ly/NECSI_Handbook_COVID-19_Prevention_and_Treatment)
 
-[Patient Blood Management During the 2020 COVID-19 Pandemic](https://sabm.memberclicks.net/assets/COVID-19/SABM-PBM-COVID19-statement-20200317.pdf)
+[Patient Blood Management During the 2020 COVID-19 Pandemic](/media/SABM-PBM-COVID19-statement-20200317.pdf)
 
 ## Family Guidelines
 
