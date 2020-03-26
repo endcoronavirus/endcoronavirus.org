@@ -16,7 +16,6 @@
 @import "p-strip";
 @include endcoronavirus-strips;
 
-
 @import "p-buttons";
 @include endcoronavirus-buttons;
 
@@ -26,3 +25,8 @@
 @import "p-card";
 @include endcoronavirus-p-card;
 
+/* Fix max-width bug in vanilla - lists should match paragraphs */
+ul,
+ol {
+  max-width: 39em;
+}
