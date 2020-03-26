@@ -8,6 +8,11 @@
     align-items: center;
   }
 
+  .p-navigation__toggle--open,
+  .p-navigation__toggle--close {
+    margin-top: 1.5rem;
+  }
+
   .p-navigation__banner .p-navigation__link {
     color: $color-x-light;
     font-size: 1.125rem;
