@@ -4,6 +4,14 @@
       margin-top: -1.5rem;
     }
   }
+  .u-touch--top-extra {
+    @media only (min-width: $breakpoint-large) {
+      margin-top: -140px;
+    }
+    @media only (min-width: $breakpoint-x-large) {
+      margin-top: -155px;
+    }
+  }
 
   .u-no-border {
     border: 0;
