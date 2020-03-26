@@ -1,11 +1,21 @@
 @mixin endcoronavirus-navigation {
   .p-navigation__logo {
     height: 5.6875rem;
-    margin-right: 3rem;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      width: 56%;
+    }
   }
 
   .p-navigation__nav {
-    align-items: center;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      align-items: center;
+    }
   }
 
   .p-navigation__toggle--open,
