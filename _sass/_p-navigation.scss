@@ -12,7 +12,6 @@
   }
 
   .p-navigation__nav {
-
     @media only screen and (min-width: $breakpoint-medium) {
       align-items: center;
     }
@@ -34,5 +33,26 @@
   .p-subnav__item {
     padding-bottom: 4px;
     padding-top: 4px;
+  }
+
+  .p-navigation--footer {
+    align-items: center;
+
+    @media screen and (min-width: $breakpoint-small) {
+      display: flex;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+      .p-navigation__logo {
+        height: 4rem;
+      }
+    }
+
+    .p-navigation__link {
+      padding-top: 7px;
+      img {
+        height: 2.5rem;
+      }
+    }
   }
 }
