@@ -4,60 +4,89 @@
     <div class="p-navigation__banner">
       <div class="p-navigation__logo">
         <a
-          class="p-navigation__link"
-          href="/"
-          accesskey="1"
-          title="End Corona Virus"
+        class="p-navigation__link"
+        href="/"
+        accesskey="1"
+        title="End Corona Virus"
         >
-          endcoronavirus
-        </a>
-      </div>
-      <a href="#navigation" class="p-navigation__toggle--open" title="menu"
-        >Menu</a
-      >
-      <a
-        href="#navigation-closed"
-        class="p-navigation__toggle--close"
-        title="close menu"
-        >Close menu</a
-      >
+        <img src="/assets/images/endcoronavirus_logo.svg" alt="endcoronavirus.com">
+      </a>
     </div>
-    <nav class="p-navigation__nav" role="menubar">
-      <span class="u-off-screen">
-        <a href="#main-content">Jump to main content</a>
-      </span>
-      <ul class="p-navigation__links" role="menu">
-        <li
-          class="p-navigation__link {% if page.url contains '/updates' %}is-selected{% endif %}"
-          role="menuitem"
-        >
-          <a href="/updates/">Updates</a>
-        </li>
-        <li
-          class="p-navigation__link {% if page.url contains '/map' %}is-selected{% endif %}"
-          role="menuitem"
-        >
-          <a href="/map/">Map</a>
-        </li>
-        <li
-          class="p-navigation__link {% if page.url contains '/guidelines' %}is-selected{% endif %}"
-          role="menuitem"
-        >
-          <a href="/guidelines/">Guidelines</a>
-        </li>
-        <li
-          class="p-navigation__link {% if page.url contains '/faq' %}is-selected{% endif %}"
-          role="menuitem"
-        >
-          <a href="/faq/">FAQ</a>
-        </li>
-        <li
-          class="p-navigation__link {% if page.url contains '/about' %}is-selected{% endif %}"
-          role="menuitem"
-        >
-          <a href="/about/">About</a>
-        </li>
-      </ul>
-    </nav>
+    <a href="#navigation" class="p-navigation__toggle--open" title="menu"
+    >Menu</a
+    >
+    <a
+    href="#navigation-closed"
+    class="p-navigation__toggle--close"
+    title="close menu"
+    >Close menu</a
+    >
   </div>
+  <nav class="p-navigation__nav" role="menubar">
+    <span class="u-off-screen">
+      <a href="#main-content">Jump to main content</a>
+    </span>
+    <ul class="p-navigation__links" role="menu">
+      <li
+      class="p-navigation__link {% if page.url contains '/updates' %}is-selected{% endif %}"
+      role="menuitem"
+      >
+      <a href="/updates/">Updates</a>
+    </li>
+    <li
+    class="p-navigation__link {% if page.url contains '/map' %}is-selected{% endif %}"
+    role="menuitem"
+    >
+    <a href="/map/">Map</a>
+  </li>
+  <li
+  class="p-navigation__link {% if page.url contains '/guidelines' %}is-selected{% endif %}"
+  role="menuitem"
+  >
+  <a href="/guidelines/">Guidelines</a>
+</li>
+<li
+class="p-navigation__link {% if page.url contains '/faq' %}is-selected{% endif %}"
+role="menuitem"
+>
+<a href="/faq/">FAQ</a>
+</li>
+<li
+class="p-navigation__link {% if page.url contains '/about' %}is-selected{% endif %}"
+role="menuitem"
+>
+<a href="/about/">About</a>
+</li>
+</ul>
+
+<ul class="p-navigation__items" role="menu">
+<li class="p-navigation__item p-subnav" role="menuitem" id="link-1">
+  <a href="#link-1-menu" aria-controls="link-1-menu" class="p-subnav__toggle p-navigation__link">Languages</a>
+  <ul class="p-subnav__items" id="link-1-menu" aria-hidden="true">
+    <li><a href="/hi" class="p-subnav__item">Hindi</a></li>
+    <li><a href="/uk" class="p-subnav__item">Українська</a></li>
+    <li><a href="/el" class="p-subnav__item">Ελληνικά</a></li>
+    <li><a href="/sv" class="p-subnav__item">Svenska</a></li>
+    <li><a href="/zh" class="p-subnav__item">中文</a></li>
+    <li><a href="/pt-br" class="p-subnav__item">Português (Brasil)</a></li>
+    <li><a href="/jp" class="p-subnav__item">日本語</a></li>
+    <li><a href="/th" class="p-subnav__item">ภาษาไทย</a></li>
+    <li><a href="/he" class="p-subnav__item">עברית</a></li>
+    <li><a href="/ru" class="p-subnav__item">русский</a></li>
+    <li><a href="/cs" class="p-subnav__item">Czech</a></li>
+    <li><a href="/pt" class="p-subnav__item">Português</a></li>
+    <li><a href="/nl" class="p-subnav__item">Nederlands</a></li>
+    <li><a href="/it" class="p-subnav__item">Italiano</a></li>
+    <li><a href="/es" class="p-subnav__item">Español</a></li>
+    <li><a href="/de" class="p-subnav__item">Deutsch</a></li>
+    <li><a href="/ar" class="p-subnav__item">العربية</a></li>
+    <li><a href="/fr" class="p-subnav__item">Français</a></li>
+    <li><a href="/" class="p-subnav__item">English</a></li>
+  </ul>
+</li>
+</ul>
+
+
+</nav>
+</div>
 </header>
