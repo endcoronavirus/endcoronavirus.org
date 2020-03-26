@@ -11,4 +11,24 @@
     padding-bottom: 2rem;
     padding-top: 2.5rem;
   }
+
+  .p-card--matrix {
+    @extend %vf-card;
+
+    background-color: $color-mid-x-light;
+    border: none;
+    display: flex;
+
+    .p-card__image {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: unset;
+    }
+
+    .p-card__content {
+      .p-card__title {
+        color: $color-brand;
+      }
+    }
+  }
 }
