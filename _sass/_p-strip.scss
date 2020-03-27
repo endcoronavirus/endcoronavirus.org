@@ -13,4 +13,14 @@
       color: $color-x-light;
     }
   }
+
+  .p-strip--brand {
+    @extend %vf-strip;
+
+    background-color: $color-brand;
+
+    &.is-dark {
+      color: $color-x-light;
+    }
+  }
 }
