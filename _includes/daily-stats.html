@@ -1,0 +1,29 @@
+---
+cases: '101'
+deaths: '20'
+countries:
+  - name: Italy
+    cases: '1'
+  - name: France
+    cases: '1'
+---
+
+<p><em>25 March 2020</em></p>
+
+<p><strong>{{ cases }}</strong> confirmed cases and <strong>{{ deaths }}</strong> deaths. These numbers are still increasing.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th style="text-align: right">Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for country in countries %}
+    <tr>
+      <td>{{ country.name }}</td>
+      <td style="text-align: right"><strong>{{ country.cases }}</strong></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
