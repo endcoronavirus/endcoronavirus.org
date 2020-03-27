@@ -1,4 +1,8 @@
 @mixin endcoronavirus-navigation {
+  .p-navigation {
+    position: sticky;
+    top: 0;
+  }
   .p-navigation__logo {
     height: 5.6875rem;
 
