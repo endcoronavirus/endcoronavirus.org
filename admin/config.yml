@@ -1,10 +1,8 @@
 backend:
   name: git-gateway
   branch: master
-
 local_backend:
-  url: http://localhost:8080/api/v1
-
+  url: http://localhost:8076/api/v1
 media_folder: "media" # Media files will be stored in the repo under images/uploads
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 collections:
@@ -39,12 +37,12 @@ collections:
       - { label: "Guidelines", name: "section", widget: "hidden", default: "guidelines" }
   - name: "faq" # Used in routes, e.g., /admin/collections/blog
     label: "FAQ" # Used in the UI
-    folder: "faqs/_posts" # The path to the folder where the documents are stored
+    folder: "faq/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: false
-    fields: # The fields for each document, usually in front matter
+    fields:
       - { label: "Section", name: "faq", widget: "hidden", default: "faq" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Question", name: "question", widget: "string" }

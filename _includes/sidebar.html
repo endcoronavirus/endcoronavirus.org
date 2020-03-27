@@ -7,6 +7,12 @@
   {{ my_include | markdownify }}
   <a class="p-button-panel" href="/updates">See all updates &rsaquo;</a>
 </div>
+{% if page.collection == "updates"%}
+{% include sidebar_updates.html %}
+{% endif %}
+{% if page.collection == "faq"%}
+{% include sidebar_faq.html %}
+{% endif %}
 <div class="p-card--light">
   <h4 class="p-card__title">Everyone can help, Join us</h4>
   <div class="p-card__content">

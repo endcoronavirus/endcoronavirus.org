@@ -1,0 +1,10 @@
+<div class="p-card--light">
+  <h4 class="p-card__title">Daily updates</h4>
+  <ul class="p-card__content">
+    {% for post in site.updates %}
+    {% if post.title != "Daily updates" %}
+    <li><a href="{{ post.url }}">{{ post.date | date: "%B %e, %Y" }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
