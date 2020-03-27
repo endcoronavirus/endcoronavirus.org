@@ -8,7 +8,7 @@ public_folder: "/media" # The src attribute for uploaded media will begin with /
 collections:
   - name: "updates" # Used in routes, e.g., /admin/collections/blog
     label: "Updates" # Used in the UI
-    folder: "updates/_posts" # The path to the folder where the documents are stored
+    folder: "_updates" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-update" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
@@ -25,7 +25,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "guidelines" # Used in routes, e.g., /admin/collections/blog
     label: "Guidelines" # Used in the UI
-    folder: "guidelines/_posts" # The path to the folder where the documents are stored
+    folder: "guidelines" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
@@ -34,10 +34,15 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "update" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Guidelines", name: "section", widget: "hidden", default: "guidelines" }
+      - {
+          label: "Guidelines",
+          name: "section",
+          widget: "hidden",
+          default: "guidelines",
+        }
   - name: "faq" # Used in routes, e.g., /admin/collections/blog
     label: "FAQ" # Used in the UI
-    folder: "faq/_posts" # The path to the folder where the documents are stored
+    folder: "_faq" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
@@ -45,5 +50,5 @@ collections:
     fields:
       - { label: "Section", name: "faq", widget: "hidden", default: "faq" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Question", name: "question", widget: "string" }
-      - { label: "Answer", name: "answer", widget: "markdown" }
+      - { label: "Question", name: "title", widget: "string" }
+      - { label: "Answer", name: "body", widget: "markdown" }
