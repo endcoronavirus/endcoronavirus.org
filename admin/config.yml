@@ -82,13 +82,14 @@ collections:
     files:
       - label: "Daily-stats"
         name: "daily-stats"
-        file: "_includes/daily-stats.html"
+        file: "_data/daily-stats.yml"
         fields:
           - { label: "Date", name: "dateUpdate" , default: "1 January 2020"}
           - { label: "Cases", name: "cases" , default: "0"}
           - { label: "Deaths", name: "deaths" , default: "0"}
           - label: Countries
             name: countries
+            allow_add: false
             widget: list
             fields:
               - {label: Country, name: name, widget: string }
