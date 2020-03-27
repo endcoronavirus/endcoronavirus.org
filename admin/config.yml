@@ -52,3 +52,25 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Question", name: "title", widget: "string" }
       - { label: "Answer", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "about.md"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "About us",
+            }
+          - {
+              label: "Layout",
+              name: "title",
+              widget: "hidden",
+              default: "page",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
