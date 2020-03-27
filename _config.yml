@@ -3,3 +3,11 @@ description: Spread knowledge, not the virus
 markdown: kramdown
 permalink: /updates/:year-:month-:day
 include: [_redirects]
+excerpt_separator: ""
+collections:
+  faq:
+    output: True
+    permalink: /faq/:name
+  updates:
+    output: True
+    permalink: /updates/:name
