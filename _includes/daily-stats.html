@@ -1,19 +1,8 @@
 <p><em>{{ site.data["daily-stats"].dateUpdate }}</em></p>
 
 <p><strong>{{ site.data["daily-stats"].cases }}</strong> confirmed cases and <strong>{{ site.data["daily-stats"].deaths }}</strong> deaths. These numbers are still increasing.</p>
-<table>
-  <thead>
-    <tr>
-      <th>Country</th>
-      <th style="text-align: right">Cases</th>
-    </tr>
-  </thead>
-  <tbody>
+<ul class="p-inline-list">
 {% for country in site.data["daily-stats"].countries %}
-    <tr>
-      <td>{{ country.name }}</td>
-      <td style="text-align: right"><strong>{{ country.cases }}</strong></td>
-    </tr>
+  <li class="p-inline-list__item">{{ country.name }}:  <strong>{{ country.cases }}</strong></li>
 {% endfor %}
-  </tbody>
-</table>
+</ul>
