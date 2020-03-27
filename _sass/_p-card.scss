@@ -12,6 +12,14 @@
     padding-top: 2.5rem;
   }
 
+  .p-card--brand {
+    @extend %vf-card;
+
+    background-color: $color-brand;
+    color: $color-x-light;
+    border: none;
+  }
+
   .p-card--matrix {
     @extend %vf-card;
 
