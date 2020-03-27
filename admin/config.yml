@@ -3,6 +3,7 @@ backend:
   branch: master
 local_backend:
   url: http://localhost:8076/api/v1
+
 media_folder: "media" # Media files will be stored in the repo under images/uploads
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 collections:
@@ -74,3 +75,22 @@ collections:
               default: "page",
             }
           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "daily-stats"
+    label: "Daily stats"
+    editor:
+      preview: false
+    files:
+      - label: "Daily-stats"
+        name: "daily-stats"
+        file: "_data/daily-stats.yml"
+        fields:
+          - { label: "Date", name: "dateUpdate" , default: "1 January 2020"}
+          - { label: "Cases", name: "cases" , default: "0"}
+          - { label: "Deaths", name: "deaths" , default: "0"}
+          - label: Countries
+            name: countries
+            allow_add: false
+            widget: list
+            fields:
+              - {label: Country, name: name, widget: string }
+              - {label: Cases, name: cases, widget: string }
