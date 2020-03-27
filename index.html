@@ -1,30 +1,55 @@
 ---
 layout: default
 ---
-<section class="p-strip--accent is-shallow u-no-padding--bottom">
+<section class="p-strip--accent">
   <div class="row">
-    <div class="col-8">
+    <div class="col-12">
       <h1 class="p-heading--hero">Spread knowledge, not the virus</h1>
       <p class="p-heading--four">Without intervention, it is estimated that an individual with the virus will infect on average 3-4 other people, resulting in an exponential increase in the number of cases over time. If social connectivity can be lowered such that the average number of people that an individual with the virus infects is less than one other person, the number of cases will exponentially decrease over time instead.</p>
     </div>
-    <div class="col-4 p-card u-no-border u-touch--top u-no-margin--bottom">
+</section>
 
+<section class="p-strip--light is-shallow">
+  <div class="row">
+    <div class="p-card u-no-border">
       <h5>Global COVID-19 worldwide cases</h5>
       <h3 class="p-header--stylised">Today's updates</h3>
       <hr />
 
       {% capture my_include %}{% include daily-stats.md %}{% endcapture %}
       {{ my_include | markdownify }}
-
-
       <a class="p-button-panel" href="/updates">See all updates &rsaquo;</a>
+    </div>
+
+    <div class="p-card--light">
+      <h4 class="p-card__title">Everyone can help, Join us</h4>
+      <div class="p-card__content">
+        <p>to help your communities and families, create safe zones</p>
+        <p class="p-card__content"><a href="/sign-up" class="p-button--brand">Sign up</a></p>
+      </div>
+    </div>
+    <div class="p-card u-no-border">
+      <h4 class="p-card__title">Why are people so afraid of this outbreak, isn't it just like the normal flu?</h4>
+      <div class="p-card__content">
+        <p>
+          The Coronavirus causes about 20% severe cases and 2% deaths. This is about 20 times higher than the flu.
+        </p>
+        <p>
+          A typical incubation period is 3 days but it may extend to 14 days, and reports exist of 24 and 27 days.
+        </p>
+        <p>
+          It is highly contagious with an increase from day to day of 50% in new cases (infection rate R0 of about
+          3-4)
+          unless extraordinary interventions are made.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="p-strip u-no-padding--top">
   <div class="row">
-    <div class="col-8">
+    <div class="col-12">
       <div class="p-tip">
         <p class="p-tip__text">Tips</p>
       </div>
@@ -133,19 +158,18 @@ layout: default
       </div>
 
       <div class="row p-divider">
-        <div class="col-5 p-divider__block">
+        <div class="col-12 p-divider__block">
           <h2>What can I do to prevent infection and spread of COVID-19?</h2>
           <p>There are several steps that we can take to stop the spread. Our experts have written detailed guides on
             how to combat
             COVID-19.</p>
-        </div>
-        <div class="col-3 p-divider__block">
-          <p><a href="/guidelines">Family guidelines&nbsp;&rsaquo;</a></p>
-          <p><a href="/guidelines">Business guidelines&nbsp;&rsaquo;</a></p>
-          <p><a href="/guidelines">Government guidelines&nbsp;&rsaquo;</a></p>
-          <p><a href="/guidelines">Guidelines for Self Isolation&nbsp;&rsaquo;</a></p>
-          <p><a href="/guidelines">Essential Coronavirus Guidlines&nbsp;&rsaquo;</a></p>
-          <p><a href="/guidelines" class="p-button--brand">See all guidelines</a></p>
+            <hr />
+            <p><a href="/guidelines">Family guidelines&nbsp;&rsaquo;</a></p>
+            <p><a href="/guidelines">Business guidelines&nbsp;&rsaquo;</a></p>
+            <p><a href="/guidelines">Government guidelines&nbsp;&rsaquo;</a></p>
+            <p><a href="/guidelines">Guidelines for Self Isolation&nbsp;&rsaquo;</a></p>
+            <p><a href="/guidelines">Essential Coronavirus Guidlines&nbsp;&rsaquo;</a></p>
+            <p><a href="/guidelines" class="p-button--brand">See all guidelines</a></p>
         </div>
       </div>
 
@@ -170,7 +194,7 @@ layout: default
       </p>
       <p><a href="/sign-up">Join us, sign up&nbsp;&rsaquo;</a></p>
     </div>
-    <div class="col-4">
+    <div class="col-12">
       <div class="p-card--light">
         <h4 class="p-card__title">Everyone can help, Join us</h4>
         <div class="p-card__content">
