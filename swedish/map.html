@@ -1,0 +1,809 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com --><!-- Last Published: Thu Mar 26 2020 21:45:34 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.endcoronavirus.org" data-wf-page="5e6e1f05e64d7d9178d4a1d5" data-wf-site="5e62f57a6f9734c5e7879c84"><head><meta charset="utf-8"/><title>endcoronavirus</title><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="yIEDwEXHvPusBIARFzsbIfNv7ucCbtyywfYNxQ5mcuU" name="google-site-verification"/><meta content="Webflow" name="generator"/><link href="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/css/v2-1-9154c7.webflow.467e8d568.css" rel="stylesheet" type="text/css"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["PT Sans:400,400italic,700,700italic","Poppins:300,regular,500,700"]  }});</script><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6d0e630f8bc353ceae61a6_round%2032.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6d0e69a2ae973d8d25da46_round%20256.png" rel="apple-touch-icon"/><style>.w-container {max-width: 1170px;}</style>
+
+<!-- Google Tag Manager | Added by Dennis L. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCGP6K6');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Search Console Verification | Added by Dennis L. -->
+<meta name="google-site-verification" content="GMjuHLaNjX1YC31oq-R_BuRS9L1ItPIPMGDWjwvww8k" />
+
+<!-- End Google Search Console Verification | Added by Dennis L. -->
+
+<script>
+  // redirects to prevent broken links
+  var pathname = window.location.pathname;
+console.log(pathname);
+switch(pathname) {
+  case '/march-13-2020':
+    window.location.href = '/update/daily-update-for-march-13-2020';
+    break;
+  case '/march-12-2020':
+    window.location.href = '/update/daily-update-for-march-12-2020';
+    break;
+  case '/march-11-2020':
+    window.location.href = '/update/daily-update-for-march-11-2020';
+    break;
+  case '/march-10-2020':
+    window.location.href = '/update/daily-update-for-march-10-2020';
+    break;
+  case '/march-9-2020':
+    window.location.href = '/update/daily-update-for-march-9-2020';
+    break;
+  case '/guidelines':
+    window.location.href = '/page/guidelines';
+    break;
+  case '/signup':
+    window.location.href = '/sign-up/english';
+    break;
+  case '/join-us':
+    window.location.href = '/signup';
+    break;
+  default:
+}
+</script>
+
+<!-- Termly Cookie Consent Banner | Added by Dennis L. -->
+<script>
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'https://app.termly.io/embed.min.js';
+    s.id = '0bbcf758-e4c8-42ca-b682-09e03903b97b';
+    s.setAttribute("data-name", "termly-embed-banner");
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- End Termly Cookie Consent Banner -->
+<link rel="canonical" href="https://www.endcoronavirus.org/swedish/"/>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+ <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+<script src="https://unpkg.com/deck.gl@~5.2.0/deckgl.min.js"></script>
+
+<style type="text/css">
+  #map {
+    width: 100% !important;
+    height: 70vh !important;
+    margin: 0;
+    background: #fff !important;
+  }
+  
+  fieldset {
+		overflow: hidden;
+    background: #fff !important;
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+  }
+  
+  .some-class {
+    float: left;
+    clear: none;
+  }
+  
+  .some-class label {
+	  float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+  }
+  
+  .some-class input[type=radio]{
+      float: left;
+      clear: none;
+      margin: 2px 0 0 2px;
+    }
+  }
+  
+  #tooltip:empty {
+    display: none;
+  }
+  
+  #tooltip {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    position: absolute;
+    padding: 4px;
+    margin: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    max-width: 300px;
+    font-size: 10px;
+    z-index: 9;
+    pointer-events: none;
+  }
+</style></head><body class="body bodyclass"><header id="nav" class="sticky-nav"><nav class="w-container"><ul class="nav-grid w-list-unstyled"><li id="w-node-9029d919e849-78d4a1d5" class="list-item-5"><a href="../index.html" class="nav-logo-link homelink w-inline-block"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6a786072a6af47c2171638_logo.svg" width="56" height="56" alt="" class="logoimage"/><div><strong class="bold-text-2">endcoronavirus</strong></div></a></li><li class="list-item-5"><div id="update_link" class="div-block"><div class="div-block-2"><a href="../page/updates" class="nav-link-2">Uppdateringar</a></div></div></li><li class="list-item-5"><a href="swedish" class="nav-link-2">Karta</a></li><li class="list-item-5"><a href="../page/swedish-guidelines" class="nav-link-2">Riktlinjer</a></li><li class="list-item-5"><a href="../page/swedish-faq" class="nav-link-2">Frågor &amp; Svar</a></li><li id="w-node-9029d919e85d-78d4a1d5" class="list-item-5"><a href="../page/swedish-about" class="nav-link-2">Om oss</a></li><li id="w-node-9029d919e860-78d4a1d5" class="list-item-7"><div data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle w-clearfix w-dropdown-toggle"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e6a7892b2d8170ec9672004_earth.svg" alt="" class="earthlogo"/><div class="icon w-icon-dropdown-toggle"></div><div class="text-block">Språk</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div class="w-dyn-items"><div class="w-dyn-item"><a href="https://endcoronavirus.org/home/hindi" class="dropdown-link">Hindi</a></div><div class="w-dyn-item"><a href="../home/ukrainian" class="dropdown-link">Українська</a></div><div class="w-dyn-item"><a href="../home/greek" class="dropdown-link">Ελληνικά</a></div><div class="w-dyn-item"><a href="../home/swedish" class="dropdown-link">Svenska</a></div><div class="w-dyn-item"><a href="../home/chinese" class="dropdown-link">中文</a></div><div class="w-dyn-item"><a href="../home/port-br" class="dropdown-link">Português (Brasil)</a></div><div class="w-dyn-item"><a href="../home/japanese" class="dropdown-link">日本語</a></div><div class="w-dyn-item"><a href="https://endcoronavirus.org/home/thai" class="dropdown-link">ภาษาไทย</a></div><div class="w-dyn-item"><a href="../home/hebrew" class="dropdown-link">עברית</a></div><div class="w-dyn-item"><a href="https://ru.endcoronavirus.org/" class="dropdown-link">русский</a></div><div class="w-dyn-item"><a href="../home/czech" class="dropdown-link">Czech</a></div><div class="w-dyn-item"><a href="https://pt.endcoronavirus.org/" class="dropdown-link">Português</a></div><div class="w-dyn-item"><a href="https://nl.endcoronavirus.org/" class="dropdown-link">Nederlands</a></div><div class="w-dyn-item"><a href="../home/italian" class="dropdown-link">Italiano</a></div><div class="w-dyn-item"><a href="https://endcoronavirus.org/home/spanish" class="dropdown-link">Español</a></div><div class="w-dyn-item"><a href="https://endcoronavirus.org/home/deutsch" class="dropdown-link">Deutsch</a></div><div class="w-dyn-item"><a href="../home/arabic" class="dropdown-link">العربية</a></div><div class="w-dyn-item"><a href="http://fr.endcoronavirus.org/" class="dropdown-link">Français</a></div><div class="w-dyn-item"><a href="https://endcoronavirus.org" class="dropdown-link">English</a></div></div></div></nav></div></li></ul></nav></header><div class="w-container"><div class="mapsection"><div class="w-embed"><div id="tooltip"></div>
+
+<fieldset>
+      <div class="some-class">
+        <input type="radio" class="radio" name="x" value="code" id="y" checked/>
+        <label for="y">Alert codes</label>
+        <input type="radio" class="radio" name="x" value="scalerank" id="z" />
+        <label for="z">Cumulative over time</label>
+         <input type="radio" class="radio" name="x" value="one_day" id="m" />
+        <label for="m">Last day change</label>  
+      </div>
+    </fieldset>
+    
+    <div id="map"></div></div></div><div class="w-clearfix"><div class="w-richtext"><h1>Beredskapskoder</h1><p>För effektiv hantering av ett utbrott bör gröna, gula, orange och röda zoner identifieras och kontinuerligt övervakas för att öka åtgärder där det behövs, samt minska dem om möjligt. Enskilda gula, orange och röda zoner bör uppdelas praktiskt (stadsdelar, stadsområden, län / distrikt, stater) så att gränser, kontrollpunkter och resebegränsningar upprättas vid behov, även till andra zoner med samma beredskapskod.</p><h3>Zontyper</h3><ul><li>Gröna Zoner: Områden utan bekräftade fal eller ett fåtal importfall från andra områden</li><li>Gula Zoner: Områden med ett fåtal fall av lokal smittspridning, men inga kluster av samhällssprdining</li><li>Orange Zoner: Områden i närhet till röda zoner eller med små kluster av spridning</li><li>Röda Zoner: Områden där det pågår aktiv smittspridning</li></ul><p>‍</p><div class="w-embed"><style type="text/css">
+
+	/* GENERAL */
+	table {	border: 1px solid #CFD5EA; }
+	th, td { padding: 5px; }
+
+	/* HEADER */
+	th:first-child {background: #4472C4; text-align:center; font-weight: bold;color:#ffffff;}
+	th:nth-child(2) {background: #70AD47; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+	th:nth-child(3) {background: #FAC000; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+	th:nth-child(4) {background: #ED7D31; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+	th:nth-child(5) {background: #FA2200; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+
+	/* ROWS */
+	tr:nth-child(odd) td:first-child {background: #CFD5EA}
+	tr:nth-child(even) td:first-child {background: #E9EBF5}
+	tr:nth-child(odd) td:nth-child(2) {background: #C5E0B4; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(2) {background: #E2F0DA; text-align:center; font-weight: bold;}
+	tr:nth-child(odd) td:nth-child(3) {background: #FCE698; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(3) {background: #FDF1CC; text-align:center; font-weight: bold;}
+	tr:nth-child(odd) td:nth-child(4) {background: #F8CBAD; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(4) {background: #FBE5D6; text-align:center; font-weight: bold;}
+	tr:nth-child(odd) td:nth-child(5) {background: #FDC3C3; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(5) {background: #FEE6E7; text-align:center; font-weight: bold;}
+
+</style>
+
+<table>
+	<thead>
+		<tr>
+			<th>Åtgärdsprotokoll</th>
+			<th>Grön</th>
+			<th>Gul</th>
+			<th>Orange</th>
+			<th>Röd</th>
+		</tr>	
+	</thead>	
+	<tbody>
+		<tr>
+			<td>
+				Öka allmänhetens medvetenhet om smittspridningsvägar samt motiverande åtgärder (social distansering, handtvätt, masker)
+			</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Ta fram process för snabbt testa invånare för relaterade symptom
+			</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Genomför test vid gränskontroller för individer som reser från Gula och orange Zoner för att identifiera individer med symptom (feber, hosta). Resande från samma fordon (flyg, buss, båt, bil) bör hållas kvar tills resultat finns. Vid positivt testresultat sätts den smittade samt medpassagerare och personal i karantän, (individuellt eller i små grupper)
+			</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Enforce 14 day quarantine for individuals who are likely to have had contact with infected individuals, including all travelers from Red Zones.</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Identifiera kontakter till smittade (smittspårning). Testa, övervaka och/eller begär självisolering</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Uppmana personliga skyddsåtgärder som social distansering, handtvätt, nysettikett
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Övervaka kontinuerligt hälsa hos individer med frekvent social kontakt, speciellt i områden med lokal smittspridning, för att tidigt upptäcka fall och utbrott
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Uppmana medborgare att undvika icke-nödvändiga evenemang och sammankomster, speciellt i små lokaler
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Ge maximalt skydd till sjukvårdspersonal
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Uppmana till användning av personlig skyddsutrustning inklusive mask
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Senarelägg/ställ in icke-nödvändiga evenemang och sammankomster
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Genomför sanering/desinkfektion på allmänna platser 
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Genomför aktivt testing av de med symptom.
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Öka testkapacitet och hastighet </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Stäng skolor, tillbedjansplatser och företag
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Begränsa resande till endast nödvändiga resor 
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Sätt områden med smittspridning i karantän. Håll folk i deras hem och tillhandahåll nödvändigheter och service utan fysisk kontakt.
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Sätt kontakter till fall i karantän.
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Samla ihop och koordinera nationella resurser (sjukvård, logistik) i områden som satts i karantän 
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Använd separata lokaler för smittade fall och vanliga patienter</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Skapa nivåer i sjukvården för att separera milda och svåra fall </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+	</tbody>
+</table></div><p>‍</p><p>Detta färgkodade system utgår från att områden med lokal spridning måste kontakt mellan individer minska så att varje smittat person sprider smittan till mindre än 1 person i genomsnitt. En minskad social sammankoppling kommer resultera i en exponentiell minskning i antalet nya fall (observera att detta sker med fördröjning på grund av inkubationstiden).</p><p>Att helt begränsa/minska resande gör det möjligt att använda mer extrema åtgärder för minskad social kontakt (ex. I orange och röda zoner) i områden där det sker hög grad av lokalt smittspridning, istället för i hela världen på en och samma gång.</p><p>I områden med endast importfall eller mycket små mängder av lokalspridning (gröna och gula zoner), kan smittspårning vara tillräckligt för att hindra tillväxt i spridningen. I detta fall är målet att undvika stora folksamlingar som tillåter &quot;super-spreader events&quot;. Om det framgår att ett utbrott inte har begränsats till endast ett fåtal fall (i detta fall är det sannolikt att det finns ytterligare smittade individer som inte är kända), kommer antalet smittade fortsätta att växa exponentiellt om åtgärder för Orange eller röda zoner implementeras omgående.</p><p>Målet med åtgärder i både röda och orange zoner är att minska social kontakt till den grad som leder till exponentiell minskning av fall över tid. Då röda zoner har fler fall (och också ökat risk för exportfall), rekommenderas mer strikta åtgärder för social distansering samt begränsningar för resande.</p><p>För mer information om medicinska och sociala åtgärder, se:</p><ul><li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance">WHO Technical Guidance</a></li><li><a href="https://www.moh.gov.sg/covid-19">Singapore Guidelines</a></li></ul></div><div class="rtl w-condition-invisible w-richtext"><h1>Beredskapskoder</h1><p>För effektiv hantering av ett utbrott bör gröna, gula, orange och röda zoner identifieras och kontinuerligt övervakas för att öka åtgärder där det behövs, samt minska dem om möjligt. Enskilda gula, orange och röda zoner bör uppdelas praktiskt (stadsdelar, stadsområden, län / distrikt, stater) så att gränser, kontrollpunkter och resebegränsningar upprättas vid behov, även till andra zoner med samma beredskapskod.</p><h3>Zontyper</h3><ul><li>Gröna Zoner: Områden utan bekräftade fal eller ett fåtal importfall från andra områden</li><li>Gula Zoner: Områden med ett fåtal fall av lokal smittspridning, men inga kluster av samhällssprdining</li><li>Orange Zoner: Områden i närhet till röda zoner eller med små kluster av spridning</li><li>Röda Zoner: Områden där det pågår aktiv smittspridning</li></ul><p>‍</p><div class="w-embed"><style type="text/css">
+
+	/* GENERAL */
+	table {	border: 1px solid #CFD5EA; }
+	th, td { padding: 5px; }
+
+	/* HEADER */
+	th:first-child {background: #4472C4; text-align:center; font-weight: bold;color:#ffffff;}
+	th:nth-child(2) {background: #70AD47; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+	th:nth-child(3) {background: #FAC000; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+	th:nth-child(4) {background: #ED7D31; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+	th:nth-child(5) {background: #FA2200; text-align:center; font-weight: bold;color:#ffffff;width:50px;}
+
+	/* ROWS */
+	tr:nth-child(odd) td:first-child {background: #CFD5EA}
+	tr:nth-child(even) td:first-child {background: #E9EBF5}
+	tr:nth-child(odd) td:nth-child(2) {background: #C5E0B4; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(2) {background: #E2F0DA; text-align:center; font-weight: bold;}
+	tr:nth-child(odd) td:nth-child(3) {background: #FCE698; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(3) {background: #FDF1CC; text-align:center; font-weight: bold;}
+	tr:nth-child(odd) td:nth-child(4) {background: #F8CBAD; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(4) {background: #FBE5D6; text-align:center; font-weight: bold;}
+	tr:nth-child(odd) td:nth-child(5) {background: #FDC3C3; text-align:center; font-weight: bold;}
+	tr:nth-child(even) td:nth-child(5) {background: #FEE6E7; text-align:center; font-weight: bold;}
+
+</style>
+
+<table>
+	<thead>
+		<tr>
+			<th>Åtgärdsprotokoll</th>
+			<th>Grön</th>
+			<th>Gul</th>
+			<th>Orange</th>
+			<th>Röd</th>
+		</tr>	
+	</thead>	
+	<tbody>
+		<tr>
+			<td>
+				Öka allmänhetens medvetenhet om smittspridningsvägar samt motiverande åtgärder (social distansering, handtvätt, masker)
+			</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Ta fram process för snabbt testa invånare för relaterade symptom
+			</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Genomför test vid gränskontroller för individer som reser från Gula och orange Zoner för att identifiera individer med symptom (feber, hosta). Resande från samma fordon (flyg, buss, båt, bil) bör hållas kvar tills resultat finns. Vid positivt testresultat sätts den smittade samt medpassagerare och personal i karantän, (individuellt eller i små grupper)
+			</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Enforce 14 day quarantine for individuals who are likely to have had contact with infected individuals, including all travelers from Red Zones.</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Identifiera kontakter till smittade (smittspårning). Testa, övervaka och/eller begär självisolering</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Uppmana personliga skyddsåtgärder som social distansering, handtvätt, nysettikett
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Övervaka kontinuerligt hälsa hos individer med frekvent social kontakt, speciellt i områden med lokal smittspridning, för att tidigt upptäcka fall och utbrott
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Uppmana medborgare att undvika icke-nödvändiga evenemang och sammankomster, speciellt i små lokaler
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Ge maximalt skydd till sjukvårdspersonal
+			</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Uppmana till användning av personlig skyddsutrustning inklusive mask
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Senarelägg/ställ in icke-nödvändiga evenemang och sammankomster
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Genomför sanering/desinkfektion på allmänna platser 
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Genomför aktivt testing av de med symptom.
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Öka testkapacitet och hastighet </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Stäng skolor, tillbedjansplatser och företag
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Begränsa resande till endast nödvändiga resor 
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Sätt områden med smittspridning i karantän. Håll folk i deras hem och tillhandahåll nödvändigheter och service utan fysisk kontakt.
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Sätt kontakter till fall i karantän.
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>
+				Samla ihop och koordinera nationella resurser (sjukvård, logistik) i områden som satts i karantän 
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Använd separata lokaler för smittade fall och vanliga patienter</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Skapa nivåer i sjukvården för att separera milda och svåra fall </td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>✓</td>
+		</tr>
+	</tbody>
+</table></div><p>‍</p><p>Detta färgkodade system utgår från att områden med lokal spridning måste kontakt mellan individer minska så att varje smittat person sprider smittan till mindre än 1 person i genomsnitt. En minskad social sammankoppling kommer resultera i en exponentiell minskning i antalet nya fall (observera att detta sker med fördröjning på grund av inkubationstiden).</p><p>Att helt begränsa/minska resande gör det möjligt att använda mer extrema åtgärder för minskad social kontakt (ex. I orange och röda zoner) i områden där det sker hög grad av lokalt smittspridning, istället för i hela världen på en och samma gång.</p><p>I områden med endast importfall eller mycket små mängder av lokalspridning (gröna och gula zoner), kan smittspårning vara tillräckligt för att hindra tillväxt i spridningen. I detta fall är målet att undvika stora folksamlingar som tillåter &quot;super-spreader events&quot;. Om det framgår att ett utbrott inte har begränsats till endast ett fåtal fall (i detta fall är det sannolikt att det finns ytterligare smittade individer som inte är kända), kommer antalet smittade fortsätta att växa exponentiellt om åtgärder för Orange eller röda zoner implementeras omgående.</p><p>Målet med åtgärder i både röda och orange zoner är att minska social kontakt till den grad som leder till exponentiell minskning av fall över tid. Då röda zoner har fler fall (och också ökat risk för exportfall), rekommenderas mer strikta åtgärder för social distansering samt begränsningar för resande.</p><p>För mer information om medicinska och sociala åtgärder, se:</p><ul><li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance">WHO Technical Guidance</a></li><li><a href="https://www.moh.gov.sg/covid-19">Singapore Guidelines</a></li></ul></div></div></div><footer class="footer w-container"><div id="socialLinks" class="div-block-11"><a href="https://twitter.com/endCOVID19" class="w-inline-block"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e69f6bbe03db920d8dd0752_1.svg" alt="" class="socialimage"/></a><a href="https://www.facebook.com/endcoronavirus.org" class="w-inline-block"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e69f73a33b1137bcd5e4370_facebook.svg" alt="" class="socialimage"/></a><a href="https://www.linkedin.com/company/674340/" class="w-inline-block"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e69f73bba34dfaba295f7ca_linkedin.svg" alt="" class="socialimage"/></a><a href="https://www.youtube.com/channel/UCGtLsESuhjZOfPa6SWq61Cg/featured" class="w-inline-block"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e69f73bb4923cffa5c86e4d_youtube.svg" alt="" class="socialimage"/></a><a href="https://medium.com/complex-systems-channel" class="w-inline-block"><img src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/5e69f73bba34df26e295f7cd_medium.svg" alt="" class="socialimage"/></a><a href="mailto:necsivolunteers@gmail.com?subject=Volunteer" class="w-inline-block"></a><div><div class="w-dyn-list"><div class="w-dyn-items"><div class="w-dyn-item"><a href="../sign-up/spanish" class="button_full footer-button w-button">Join us</a></div></div></div></div></div></footer><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e62f57a6f9734c5e7879c84" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5e62f57a6f9734c5e7879c84/js/webflow.ec1e234cf.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script>
+document.addEventListener('DOMContentLoaded', init);
+window.addEventListener('mercury:load', init);
+
+function init(){
+  if(window.location.href.match(/https:\/\/www\.endcoronavirus\.org\/map\/\w+/)){
+    var rate_value;
+    var map;
+    var data0=[];
+    var geojsonLayer;
+    navigator.sayswho= (function(){
+      var ua= navigator.userAgent, tem, 
+      M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+      if(/trident/i.test(M[1])){
+          tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+          return 'IE '+(tem[1] || '');
+      }
+      if(M[1]=== 'Chrome'){
+          tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+          if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+      }
+      M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+      if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+      return M.join(' ');
+    })();
+
+    fetch('https://raw.githubusercontent.com/necsi/database/master/mapping-data/ne_count18.json').then(res => res.json()) //ne_10m_admin_1_states_provinces102
+    .then(data => {  
+      data0=data;
+      makeMyMap(data);
+    });
+
+    function makeMyMap(data){
+      
+      document.getElementById("map").innerHTML="";
+      for (i = 0; i < document.getElementsByClassName('radio').length; i++) {
+        if (document.getElementsByClassName('radio')[i].checked) {
+          rate_value = document.getElementsByClassName('radio')[i].value;
+        }
+      }
+      
+      geojsonLayer = new deck.GeoJsonLayer({
+        data,
+        opacity: 0.25,
+        stroked: true,
+        filled: true,
+        extruded: false,
+        wireframe: false,
+        fp64: true,
+        lightSettings: LIGHT_SETTINGS,
+        getElevation: f => f.properties[rate_value],
+        getFillColor: f => colorScale(f.properties[rate_value]),
+        getLineColor: f => [255, 255, 255],
+
+        pickable: true,
+        onHover: updateTooltip
+      });
+
+      map=new deck.DeckGL({
+       mapboxApiAccessToken: 'pk.eyJ1Ijoib2J1Y2hlbCIsImEiOiJjamhqZTZsOWkwN25iM2Fxd282N2FlZDVqIn0.bkOU5gAio8eKnmKHlntJsA',
+          mapStyle: 'mapbox://styles/mapbox/dark-v9',
+          container: 'map',
+          
+          latitude: 0,
+          longitude: 20,
+          zoom: 1,
+          pitch: 0,
+          maxPitch: 0,
+          maxBearing: 0,
+          dragRotate: false,
+          layers: [geojsonLayer]
+      });
+    }
+
+    const LIGHT_SETTINGS = {
+      lightsPosition: [-125, 50.5, 5000],
+      ambientRatio: 0.2,
+      diffuseRatio: 0.5,
+      specularRatio: 0.3,
+      lightsStrength: [0.5, 0.0, 1.0, 0.0],
+      numberOfLights: 1
+    };
+
+    var COLOR_SCALE = [
+      [64, 64, 64],
+      [89, 161, 79],
+      [237,201,72],
+      [242,142,43],
+      [225,87,89]
+    ];
+
+    function colorScale(x) {
+      var i = 0;
+      
+      x = +x; // typecast x as an int
+      
+      if (rate_value=="code") {
+        if (x==0) {
+          i = 0;
+        } else if (x==1) {
+          i = 1;
+        } else if (x==2) {
+          i = 2;
+        } else if (x==3) {
+          i = 3;
+        } else if (x==4) {
+          i = 4;
+        }
+      }
+      else if (rate_value=="one_day")
+      {
+        if (x < 1){
+          i = 0;
+        } else if (x<=10) {
+          i = 1;
+        } else if (x<=20) {
+          i = 2;
+        } else if (x<=50) {
+          i = 3;
+        } else if (x<=100) {
+          i = 4;
+        }  else if (x<=200) {
+          i = 5;
+        }  else if (x<=300) {
+          i = 6;
+        } else if (x>=301) {
+          i = 7;
+        } else {
+          i=0;
+        }
+      }
+      else 
+      {  // fixed bug where 3000 - 4000 range was missing (italy)
+        if (x < 1){
+          i = 0;
+        } else if (x<=100) {
+          i = 1;
+        } else if (x<=1000) {
+          i = 2;
+        } else if (x<=2000) {
+          i = 3;
+        } else if (x<=3000) {
+          i = 4;
+        } else if (x<=5000) {
+          i = 5;
+        } else if (x<=10000) {
+          i = 6;
+        } else if (x>=10001) {
+          i = 7;   
+        }
+      }
+      if (i < 0) {
+        return COLOR_SCALE[i] || COLOR_SCALE[0];
+      }
+      return COLOR_SCALE[i] || COLOR_SCALE[COLOR_SCALE.length - 1];
+    }
+
+    function updateTooltip({x, y, object}) {
+      const tooltip = document.getElementById('tooltip');
+
+      var text = "";
+      if(rate_value=="code"){
+        text='<div><b>Alert level:</b></div>'
+      } 
+      else 
+      {
+        text='<div><b>Number of cases:</b></div>';
+      }
+
+
+      if (object) {
+        document.getElementById("deckgl-overlay").style.cursor = "pointer";
+        tooltip.style.top = `${y}px`;
+        tooltip.style.left = `${x+25}px`;
+        tooltip.innerHTML = '<div><div>'
+          +`${object.properties.name} ${object.properties.iso}`
+          +'</div></div>' + text + '<div>'
+          +`${object.properties[rate_value]}`
+        +'<p>Last updated:</p>'
+        +`${object.properties["woe_label"]}`
+          +'</div>';
+      }
+      else
+      {
+        document.getElementById("deckgl-overlay").style.cursor = "-webkit-grab";
+        tooltip.innerHTML = '';
+      }
+    }
+
+    var x = document.getElementsByClassName("radio");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].onclick = function(e){
+        for (i = 0; i < document.getElementsByClassName('radio').length; i++) {
+          if (document.getElementsByClassName('radio')[i].checked) {
+            rate_value = document.getElementsByClassName('radio')[i].value;
+          }
+        }
+        if (rate_value=="scalerank") {
+          COLOR_SCALE = [
+            [64, 64, 64],    
+            [254, 217, 118],
+            [254, 178, 76],
+            [253, 141, 60],
+            [252, 78, 42],
+            [227, 26, 28],
+            [189, 0, 38],
+            [128, 0, 38]
+          ];
+        } 
+        else if (rate_value=="one_day") 
+        {
+          COLOR_SCALE = [
+            [64, 64, 64],
+            [254, 217, 118],
+            [254, 178, 76],
+            [253, 141, 60],
+            [252, 78, 42],
+            [227, 26, 28],
+            [189, 0, 38],
+            [128, 0, 38]
+          ];
+        }
+        else
+        {
+          COLOR_SCALE = [
+            [64, 64, 64],  
+            [89, 161, 79], 
+            [237,201,72],
+            [242,142,43],
+            [225,87,89]
+          ];
+        }
+        
+        makeMyMap(data0);
+      }
+    }
+  }
+}
+</script></body></html>
+
