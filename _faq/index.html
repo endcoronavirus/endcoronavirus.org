@@ -1,0 +1,17 @@
+---
+layout: page
+title: "FAQ"
+---
+
+{% for faq in site.faq %}
+{% if faq.title != "FAQ" %}
+<a name="{{ faq.url }}">
+  <h3>
+    {{ faq.title }}
+  </h3>
+</a>
+
+{{ faq.content }}
+
+{% endif %}
+{% endfor %}
