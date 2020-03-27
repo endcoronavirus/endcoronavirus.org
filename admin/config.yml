@@ -5,8 +5,8 @@ backend:
 local_backend:
   url: http://localhost:8081/api/v1
 
-media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "media" # Media files will be stored in the repo under images/uploads
+public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "updates" # Used in routes, e.g., /admin/collections/blog
     label: "Updates" # Used in the UI
@@ -30,4 +30,9 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "update" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Guidelines", name: "section", widget: "hidden", default: "guidelines" }
+      - {
+          label: "Guidelines",
+          name: "section",
+          widget: "hidden",
+          default: "guidelines",
+        }
