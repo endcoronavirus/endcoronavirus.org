@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: "Why are people so afraid of this outbreak, isn't it just like the normal flu?"

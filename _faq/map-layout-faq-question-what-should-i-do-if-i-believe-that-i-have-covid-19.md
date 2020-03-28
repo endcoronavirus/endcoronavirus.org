@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: What should I do if I believe that I have COVID-19?

@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: What are the symptoms of COVID-19?

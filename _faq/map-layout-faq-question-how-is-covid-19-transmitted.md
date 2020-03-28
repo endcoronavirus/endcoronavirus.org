@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: How is COVID-19 transmitted?

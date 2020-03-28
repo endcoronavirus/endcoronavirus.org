@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: Should I wear a face mask?

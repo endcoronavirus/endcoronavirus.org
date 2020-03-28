@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: How can I protect myself and others from this virus?

@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: Will warm weather stop the outbreak?

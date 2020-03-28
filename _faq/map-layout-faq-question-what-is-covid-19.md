@@ -1,4 +1,5 @@
 ---
+language: en
 section: faq
 layout: page
 title: What is COVID-19?
