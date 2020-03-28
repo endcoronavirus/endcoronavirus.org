@@ -1,3 +1,10 @@
+{% if page.dir == '/' %}
+  {% assign lang = 'en' %}
+{% else %}
+  {% assign lang = page.dir | remove: "/" %}
+{% endif %}
+
+
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
