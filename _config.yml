@@ -1,19 +1,13 @@
 title: EndCoronavirus.org
 description: Spread knowledge, not the virus
 markdown: kramdown
-permalink: /updates/:year-:month-:day
 include: [_redirects]
 excerpt_separator: ""
 collections:
-  index:
-    output: True
-    permalink: /
   faq:
-    output: True
-    permalink: /faq/:name
-  updates:
-    output: True
-    permalink: /updates/:name
+    output: false
   about:
-    output: True
-    permalink: /about/:name
+    output: false
+  updates:
+    output: false
+

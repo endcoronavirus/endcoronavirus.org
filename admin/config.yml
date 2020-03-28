@@ -15,12 +15,6 @@ collections:
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
-      - {
-          label: "Section",
-          name: "updates",
-          widget: "hidden",
-          default: "updates",
-        }
       - label: Language
         name: language
         widget: relation
@@ -29,7 +23,6 @@ collections:
         valueField: code
         displayFields: ["language"]
         default: "en"
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "guidelines" # Used in routes, e.g., /admin/collections/blog

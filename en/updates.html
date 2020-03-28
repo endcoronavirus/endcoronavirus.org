@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Daily updates"
+permalink: /updates
+---
+{% for post in site.updates reversed limit: 1 %}
+  {% if post.language == 'en' %}
+    {% if post.title != "Daily updates" %}
+      <h2>{{ post.title }}</h2>
+      {{ post.content }}
+    {% endif %}
+  {% endif %}
+{% endfor %}

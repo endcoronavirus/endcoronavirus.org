@@ -16,19 +16,19 @@
       </span>
       <ul class="p-navigation__links" role="menu">
         <li class="p-navigation__link {% if page.url contains '/updates' %}is-selected{% endif %}" role="menuitem">
-          <a href="/updates/">Updates</a>
+          <a href="{{ base_url }}updates/">Updates</a>
         </li>
         <li class="p-navigation__link {% if page.url contains '/map' %}is-selected{% endif %}" role="menuitem">
-          <a href="/map/">Map</a>
+            <a href="{{ base_url }}map/">Map</a>
         </li>
         <li class="p-navigation__link {% if page.url contains '/guidelines' %}is-selected{% endif %}" role="menuitem">
-          <a href="/guidelines/">Guidelines</a>
+            <a href="{{ base_url }}guidelines/">Guidelines</a>
         </li>
         <li class="p-navigation__link {% if page.url contains '/faq' %}is-selected{% endif %}" role="menuitem">
-          <a href="/faq/">FAQ</a>
+            <a href="{{ base_url }}faq/">FAQ</a>
         </li>
         <li class="p-navigation__link {% if page.url contains '/about' %}is-selected{% endif %}" role="menuitem">
-          <a href="/about/">About</a>
+            <a href="{{ base_url }}about/">About</a>
         </li>
       </ul>
 
