@@ -38,7 +38,7 @@
           <ul class="p-subnav__items" id="link-1-menu" aria-hidden="true">
             {% for language_hash in site.data.languages %}
               {% assign language = language_hash[1] %}
-              <li><a href="/{{ language.code }}" class="p-subnav__item">{{ language.language }}</a></li>
+              <li><a href="/{% if language.code != 'en' %}{{ language.code }}{% endif %}" class="p-subnav__item">{{ language.language }}</a></li>
             {% endfor %}
             <li><a href="https://ru.endcoronavirus.org/" class="p-subnav__item">русский</a></li>
             <li><a href="https://pt.endcoronavirus.org/" class="p-subnav__item">Português</a></li>
