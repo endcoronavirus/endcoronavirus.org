@@ -3,8 +3,7 @@
   <h3 class="p-header--stylised">Today's updates</h3>
   <hr />
 
-  {% capture my_include %}{% include daily-stats.md %}{% endcapture %}
-  {{ my_include | markdownify }}
+  {% include daily-stats.html %}
   <a class="p-button-panel" href="/updates">See all updates &rsaquo;</a>
 </div>
 {% if page.collection == "updates"%}

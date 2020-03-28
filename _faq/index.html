@@ -2,16 +2,17 @@
 layout: page
 title: "Frequently asked questions"
 ---
-
+<div class="row">
+<div class="col-8">
 {% for faq in site.faq %}
 {% if faq.title != "Frequently asked questions" %}
-<a name="{{ faq.url }}">
-  <h3>
-    {{ faq.title }}
-  </h3>
-</a>
+<h3 id="{{ faq.url }}">
+  {{ faq.title }}
+</h3>
 
-{{ faq.content }}
+<p>{{ faq.content }}</p>
 
 {% endif %}
 {% endfor %}
+</div>
+</div>

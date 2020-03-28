@@ -1,0 +1,8 @@
+<p><em>{{ site.data["daily-stats"].dateUpdate }}</em></p>
+
+<p><strong>{{ site.data["daily-stats"].cases }}</strong> confirmed cases and <strong>{{ site.data["daily-stats"].deaths }}</strong> deaths. These numbers are still increasing.</p>
+<ul class="p-inline-list">
+{% for country in site.data["daily-stats"].countries %}
+  <li class="p-inline-list__item">{{ country.name }}:  <strong>{{ country.cases }}</strong></li>
+{% endfor %}
+</ul>

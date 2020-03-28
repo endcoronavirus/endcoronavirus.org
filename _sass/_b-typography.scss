@@ -1,9 +1,5 @@
 @mixin endcoronavirus-typography {
 
-  * {
-    text-align: left;
-  }
-
   p,
   h1,
   h2,
@@ -12,6 +8,10 @@
   h5,
   [class*="p-heading"] {
     max-width: none;
+  }
+  
+  li {
+    max-width: calc(40em - 2rem);
   }
 
   h1 {
