@@ -1,6 +1,14 @@
 @mixin endcoronavirus-secondarynavigation {
   @include vf-p-accordion;
 
+  .p-secondary-nav {
+    @media only (min-width: $breakpoint-medium) {
+      position: sticky;
+      top: 91px;
+      z-index: 10;
+    }
+  }
+
   .p-accordion__tab {
     background-position: top 50% right 1rem;
     color: $color-x-light;
@@ -18,11 +26,11 @@
     }
   }
 
-  .p-accordion__tab[aria-expanded='true'] {
+  .p-accordion__tab[aria-expanded='false'] {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='9' width='9'%3E%3Cg fill='%23fff' fill-rule='evenodd'%3E%3Cpath d='M4 0h1v9H4z'/%3E%3Cpath d='M0 5V4h9v1z'/%3E%3C/g%3E%3C/svg%3E");
   }
 
-  .p-accordion__tab[aria-expanded='false'] {
+  .p-accordion__tab[aria-expanded='true'] {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='9' width='9'%3E%3Cpath d='M0 5V4h9v1z' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E");
   }
 }

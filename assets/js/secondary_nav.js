@@ -44,7 +44,18 @@ function setupAccordion(accordionContainer) {
 
 // Setup all accordions on the page.
 var accordions = document.querySelectorAll('.p-accordion');
+var navigationItems = document.querySelectorAll('.js-close-nav');
 
 for (var i = 0, l = accordions.length; i < l; i++) {
   setupAccordion(accordions[i]);
+}
+
+for (var i = 0, l = navigationItems.length; i < l; i++) {
+  navigationItems[i].addEventListener('click', function(e) {
+    var openPanels = document.querySelectorAll('[aria-expanded=true]');
+
+    for (var i = 0, l = openPanels.length; i < l; i++) {
+      toggleExpanded(openPanels[i], false);
+    }
+  });
 }
