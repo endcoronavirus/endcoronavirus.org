@@ -1,0 +1,14 @@
+---
+layout: page
+title: "About us"
+---
+
+<div class="row">
+    <div class="col-8">
+        {% for about in site.about %}
+        {% if about.language == 'en' %}
+          <p>{{ about.content }}</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,20 @@
+---
+layout: page
+title: "Zoubidou bi dou bi dou"
+---
+<div class="row">
+    <div class="col-8">
+        {% for faq in site.faq %}
+        {% if faq.language == 'to' %}
+          {% if faq.title != "Frequently asked questions" %}
+            <h3 id="{{ faq.url }}">
+                {{ faq.title }}
+            </h3>
+
+            <p>{{ faq.content }}</p>
+
+           {% endif %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

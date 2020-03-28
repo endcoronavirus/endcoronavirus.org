@@ -1,5 +1,4 @@
 ---
-layout: page
 language: en
 title: About us
 ---

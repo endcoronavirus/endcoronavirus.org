@@ -77,38 +77,31 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Question", name: "title", widget: "string" }
       - { label: "Answer", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
+  - name: "About"
+    label: "about"
     editor:
       preview: false
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "about.md"
-        fields:
-          - {
-              label: Language,
-              name: language,
-              widget: relation,
-              collection: languages,
-              searchFields: ["language"],
-              valueField: code,
-              displayFields: ["language"],
-              default: "en",
-            }
-          - {
-              label: "Title",
-              name: "title",
-              widget: "string",
-              default: "About us",
-            }
-          - {
-              label: "Layout",
-              name: "title",
-              widget: "hidden",
-              default: "page",
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
+    folder: "_about"
+    create: true
+    slug: "{{language}}"
+    fields:
+      - {
+          label: Language,
+          name: language,
+          widget: relation,
+          collection: languages,
+          searchFields: ["language"],
+          valueField: code,
+          displayFields: ["language"],
+          default: "en",
+        }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          default: "About us",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "daily-stats"
     label: "Daily stats"
     editor:

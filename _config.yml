@@ -5,9 +5,15 @@ permalink: /updates/:year-:month-:day
 include: [_redirects]
 excerpt_separator: ""
 collections:
+  index:
+    output: True
+    permalink: /
   faq:
     output: True
     permalink: /faq/:name
   updates:
     output: True
     permalink: /updates/:name
+  about:
+    output: True
+    permalink: /about/:name
