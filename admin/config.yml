@@ -21,6 +21,14 @@ collections:
           widget: "hidden",
           default: "updates",
         }
+      - label: Language
+        name: language
+        widget: relation
+        collection: languages
+        searchFields: ["language"]
+        valueField: code
+        displayFields: ["language"]
+        default: "en"
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -32,6 +40,14 @@ collections:
     editor:
       preview: false
     fields: # The fields for each document, usually in front matter
+      - label: Language
+        name: language
+        widget: relation
+        collection: languages
+        searchFields: ["language"]
+        valueField: code
+        displayFields: ["language"]
+        default: "en"
       - { label: "Layout", name: "layout", widget: "hidden", default: "update" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -49,6 +65,14 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Language
+        name: language
+        widget: relation
+        collection: languages
+        searchFields: ["language"]
+        valueField: code
+        displayFields: ["language"]
+        default: "en"
       - { label: "Section", name: "faq", widget: "hidden", default: "faq" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Question", name: "title", widget: "string" }
@@ -62,6 +86,16 @@ collections:
         name: "about"
         file: "about.md"
         fields:
+          - {
+              label: Language,
+              name: language,
+              widget: relation,
+              collection: languages,
+              searchFields: ["language"],
+              valueField: code,
+              displayFields: ["language"],
+              default: "en",
+            }
           - {
               label: "Title",
               name: "title",
@@ -94,3 +128,15 @@ collections:
             fields:
               - {label: Country, name: name, widget: string }
               - {label: Cases, name: cases, widget: string }
+  - label: "Languages"
+    name: "languages"
+    folder: "_data/languages"
+    extension: "yml"
+    format: "yml"
+    create: true
+    slug: "{{code}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Language", name: "language" , widget: string}
+      - { label: "Country Code (for url)", name: "code" , widget: string}
