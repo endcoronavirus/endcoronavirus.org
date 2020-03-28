@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="u-fixed-width">
+    <ul class="p-accordion__list">
+      <li class="p-accordion__group">
+        <section class="p-accordion__panel" id="tab1-section" role="tabpanel" aria-hidden="true" aria-labelledby="tab1-section">
+          <ul class="p-list is-split">
+            {% for update in site.updates reversed %}
+            {% if update.title != "Daily updates" %}
+            <li><a class="p-list__item p-link--inverted" href="{{ update.url }}">{{ update.date | date: "%B %e, %Y" }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </section>
+        </li>
+      </ul>
+    </div>
+  </div>
