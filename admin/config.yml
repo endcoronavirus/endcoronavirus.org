@@ -133,7 +133,7 @@ collections:
     folder: "_data/languages"
     extension: "yml"
     format: "yml"
-    create: true
+    create: false
     slug: "{{code}}"
     editor:
       preview: false
