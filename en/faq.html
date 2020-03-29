@@ -3,19 +3,5 @@ layout: page
 title: "Frequently asked questions"
 permalink: /faq
 ---
-<div class="row">
-    <div class="col-8">
-        {% for faq in site.faq %}
-        {% if faq.language == 'en' %}
-        {% if faq.title != "Frequently asked questions" %}
-        <h3 id="{{ faq.url }}">
-            {{ faq.title }}
-        </h3>
 
-        <p>{{ faq.content }}</p>
-
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-    </div>
-</div>
+{% include layouts/faq.html lang="en" %}

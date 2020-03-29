@@ -3,5 +3,4 @@ layout: page
 title: "Early Outbreak Response Guidelines"
 ---
 
-guildinesg
-
+{% include layouts/guidelines.md lang="to" %}

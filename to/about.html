@@ -2,12 +2,5 @@
 layout: page
 title: "Zoubidou bi dou bi dou"
 ---
-<div class="row">
-    <div class="col-8">
-        {% for about in site.about %}
-          {% if about.language == 'to' %}
-            <p>{{ about.content }}</p>
-          {% endif %}
-        {% endfor %}
-    </div>
-</div>
+
+{% include layouts/about.html lang="to" %}

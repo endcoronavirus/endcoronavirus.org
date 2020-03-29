@@ -1,0 +1,9 @@
+{% for post in site.updates reversed %}
+  {% if post.language ==  include.lang %}
+    {% if post.title != "Daily updates" %}
+      <h2>{{ post.title }}</h2>
+      {{ post.content }}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
