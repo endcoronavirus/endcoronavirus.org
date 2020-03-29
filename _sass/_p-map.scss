@@ -1,0 +1,111 @@
+@mixin endcoronavirus-p-map {
+
+  .p-map >   table {
+    border: 1px solid #CFD5EA;
+
+    & th,
+    & td {
+      padding: 5px;
+    }
+
+    & th {
+      &:first-child {
+        background: #4472C4;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(2) {
+        background: #70AD47;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        width: 75px;
+      }
+
+      &:nth-child(3) {
+        background: #FAC000;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        width: 75px;
+      }
+
+      &:nth-child(4) {
+        background: #ED7D31;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        width: 75px;
+      }
+
+      &:nth-child(5) {
+        background: #FA2200;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        width: 75px;
+      }
+    }
+
+    & tr {
+
+      &:nth-child(odd) td:first-child {
+        background: #CFD5EA;
+      }
+
+      &:nth-child(even) td:first-child {
+        background: #E9EBF5;
+      }
+
+      &:nth-child(odd) td:nth-child(2) {
+        background: #C5E0B4;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(even) td:nth-child(2) {
+        background: #E2F0DA;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(odd) td:nth-child(3) {
+        background: #FCE698;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(even) td:nth-child(3) {
+        background: #FDF1CC;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(odd) td:nth-child(4) {
+        background: #F8CBAD;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(even) td:nth-child(4) {
+        background: #FBE5D6;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(odd) td:nth-child(5) {
+        background: #FDC3C3;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &:nth-child(even) td:nth-child(5) {
+        background: #FEE6E7;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
