@@ -3,7 +3,8 @@ section: updates
 layout: page
 title: "Daily updates"
 ---
-{% for post in site.updates reversed limit: 1 %}
+{% assign updates = site.updates | sort: 'title' | reverse %}
+{% for post in updates limit: 1 %}
   {% if post.title != "Daily updates" %}
   <h2>{{ post.title }}</h2>
   {{ post.content }}
